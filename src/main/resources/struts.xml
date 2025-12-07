@@ -6,8 +6,10 @@
     	<action name="">
             <result>/index.jsp</result>
         </action>
-    	
-        <action name="bookList" class="com.example.bookstore.action.BookAction" method="list">
+    </package>
+    
+    <package name="books" namespace="/books" extends="struts-default">
+    	<action name="bookList" class="com.example.bookstore.action.BookAction" method="list">
             <result name="success">/bookList.jsp</result>
         </action>
 
@@ -26,12 +28,10 @@
         <action name="updateBook" class="com.example.bookstore.action.BookAction" method="update">
             <result name="success" type="redirect">bookList</result>
         </action>
-
-        <action name="deleteBook" class="com.example.bookstore.action.BookAction" method="delete">
+        
+          <action name="deleteBook" class="com.example.bookstore.action.BookAction" method="delete">
             <result name="success" type="redirect">bookList</result>
         </action>
-        
-        
     </package>
     
     <package name="tutorials" namespace="/tutorials" extends="struts-default">
