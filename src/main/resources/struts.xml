@@ -27,7 +27,8 @@
         </action>
         
         <action name="getTutorial" class="com.example.bookstore.action.TutorialAction" >
-        		<result name="success">/Tutorial.jsp</result>
+        		<result name="success">/tutorial.jsp</result>
+        		<result name="failure">/error.jsp</result>
         </action>
     </package>
 </struts>
