@@ -31,7 +31,11 @@
             <result name="success" type="redirect">bookList</result>
         </action>
         
-        <action name="getTutorial" class="com.example.bookstore.action.TutorialAction" >
+        
+    </package>
+    
+    <package name="tutorials" namespace="/tutorials" extends="struts-default">
+    	<action name="getTutorial" class="com.example.bookstore.action.TutorialAction" >
         		<result name="success">/success.jsp</result>
         		<result name="failure">/error.jsp</result>
         </action>
