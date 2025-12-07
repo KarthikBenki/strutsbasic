@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
-    <package name="default" extends="struts-default">
+    <package name="default" namespace="/" extends="struts-default">
+    
+    	<action name="">
+            <result>/index.jsp</result>
+        </action>
+    	
         <action name="bookList" class="com.example.bookstore.action.BookAction" method="list">
             <result name="success">/bookList.jsp</result>
         </action>
@@ -27,7 +32,7 @@
         </action>
         
         <action name="getTutorial" class="com.example.bookstore.action.TutorialAction" >
-        		<result name="success">/tutorial.jsp</result>
+        		<result name="success">/success.jsp</result>
         		<result name="failure">/error.jsp</result>
         </action>
     </package>
