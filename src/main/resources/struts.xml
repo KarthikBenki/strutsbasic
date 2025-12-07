@@ -25,5 +25,9 @@
         <action name="deleteBook" class="com.example.bookstore.action.BookAction" method="delete">
             <result name="success" type="redirect">bookList</result>
         </action>
+        
+        <action name="getTutorial" class="com.example.bookstore.action.TutorialAction" >
+        		<result name="success">/Tutorial.jsp</result>
+        </action>
     </package>
 </struts>
